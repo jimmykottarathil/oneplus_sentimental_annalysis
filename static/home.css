@@ -1,0 +1,335 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    background-image: url('b4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    margin: 0px;
+
+}
+
+.section-1
+{
+    height: 20%;
+    display: grid;
+    grid-template: repeat(8, 1fr)/repeat(20, 1fr);
+}
+
+#logo
+{
+    height: 80px;
+    grid-column: 1/3;
+    grid-row: 2/5;
+    margin-bottom: 4px;
+    margin-left: 5px;
+    animation-name: vibrate-1;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 100ms;
+    animation-direction: alternate;
+
+}
+
+div.whattsapp>img
+{
+   margin: 0px;
+   width: 40px;
+}
+
+div.whattsapp
+{
+    grid-column: 16/18;
+    grid-row: 2/4;
+}
+.whattsapp>#no
+{
+    color: white;
+    position: relative;
+    right: 45px;
+    top: -20px;
+    opacity: 0;
+    font-family: 'Open Sans Condensed';
+    font-size: 13px;
+}
+
+.whattsapp:hover #no
+{
+    top: 15px;
+    opacity: 1;
+    transition: 1.5s;
+
+}
+
+.gmail>img
+{
+    margin: 0px;
+    width: 40px;
+    position: relative;
+    right: -7px;
+}
+
+div.gmail
+{
+    grid-column: 17/19;
+    grid-row: 2/4;
+}
+
+.gmail>#address
+{
+    margin: 0px;
+    font-size: 11px;
+    color: white;
+    position: relative;
+    right: 28px;
+    top: -25px;
+    opacity: 0;
+    font-family: 'Open Sans Condensed';
+}
+
+.gmail:hover #address
+{
+    top: 0px;
+    opacity: 1;
+    transition: 1.5s;
+}
+.phone>img
+{
+    width: 35px;
+    position: relative;
+    right: -10px;
+
+}
+.phone
+{
+    grid-column: 18/20;
+    grid-row: 2/4;
+}
+
+.phone>#phone-no
+{
+    color: white;
+    position: relative;
+    right: 38px;
+    top: -5px;
+    opacity: 0;
+    font-family: 'Open Sans Condensed';
+    font-size: 13px;
+}
+
+.phone:hover #phone-no
+{
+    top: 20px;
+    opacity: 1;
+    transition: 1.5s;
+}
+
+.twitter>img
+{
+    width: 38px;
+}
+.twitter
+{
+    grid-column: 15/17;
+    grid-row: 2/4;
+}
+.twitter>#twitter-id
+{
+    color: white;
+    font-family: 'Open Sans Condensed';
+    font-size: 12px;
+    position: relative;
+    right: 50px;
+    bottom: 5px;
+    opacity: 0;
+}
+
+.twitter:hover #twitter-id
+{
+    position: relative;
+    bottom: -15px;
+    opacity: 1;
+    transition:1.5s;
+}
+
+.section-2
+{
+    height: 80%;
+    display: grid;
+    grid-template: repeat(6, 1fr)/repeat(20, 1fr);
+}
+
+#image-1
+{
+    height: 350px;
+    grid-row: 1/7;
+    grid-column: 10/16;
+    align-self: center;
+    margin-left: 30px;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 200ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.text
+{
+    grid-column: 3/10;
+    grid-row: 1/4;
+    font-family: Audiowide;
+    color: white;
+    font-size: 10px;
+    margin: 0px;
+    color: #f2ca00;
+}
+
+h1#c
+{
+  position: relative;
+  bottom: -75px;
+}
+
+h1#b
+{
+  position: relative;
+  bottom: -55px;
+}
+
+h1#a
+{
+    position: relative;
+    bottom: -25px;
+}
+
+#heading-1
+{
+    margin: 0px;
+    grid-column: 17/20;
+    grid-row: 2/4;
+    align-self: end;
+    background:white;
+    margin-bottom: 5px;
+    text-align: center;
+    transition: all 1.5s ease 100ms;
+
+}
+
+#heading-2
+{
+    margin: 0px;
+    grid-column: 17/20;
+    grid-row:4/6;
+    align-self: start;
+    background: white;
+    margin-bottom: 5px;
+    text-align: center;
+    transition: all 1.5s ease 100ms;
+}
+
+
+#heading-1:hover, #heading-2:hover
+{
+    background: red;
+    font-size: 40px;
+}
+
+a#button
+{
+    grid-column: 5/9;
+    grid-row: 5/6;
+    color: white;
+    text-decoration: none;
+    align-self: center;
+    font-family: 'Fredoka One';
+    font-size: 22px;
+    padding: 5px 0px 5px 10px;
+    background: red;
+    border-radius: 5px;
+    width: 120px;
+    text-align: center;
+    transition: width  1s;
+}
+
+a#button>span::after
+{
+    content: ">>";
+    position: relative;
+    right: 40px;
+    opacity: 0;
+    transition: 1s;
+}
+
+a#button>span
+{
+    position: relative;
+    right: -10px;
+}
+
+a#button:hover
+{
+    width: 150px;
+    background: #a6ff00;
+    box-shadow: 0px 0px 20px #a6ff00, 0px 0px 40px #a6ff00, 0px 0px 60px #a6ff00;
+    transition: 1s;
+    color: black;
+}
+a#button:hover span:after
+{
+    right: 20px;
+    opacity: 1;
+    padding-left: 30px;
+    transition: all 1.5s ease 100ms;
+    color: black;
+}
+
+a#button
+{
+    padding-top: -100px;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}

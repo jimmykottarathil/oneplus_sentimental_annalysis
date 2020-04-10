@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/page1.css">
+    <meta charset="UTF-8">
+    <title>J M K-page1</title>
+</head>
+<body>
+    <div class="section-1">
+        <h1><span id="h1">WELCOME TO ONEPLUS</span> <br> <span id="h2">SENTIMENTAL ANALYSIS PORTAL</span></h1>
+        <form class="forms" action="#" method="POST">
+            <label for="name">Enter name</label>
+            <input id="textbox-field" type="text" name="name" id="name" size="32">
+            <p id="textarea-title">Enter review</p>
+            <textarea id="review-field" name="review" cols="50" rows="15"></textarea>
+            <br>
+            <input id="submit-button" type="submit" value="submit">
+        </form>
+
+        {% if data %}
+            {% if data.prediction == 1 %}
+                <h2 id="user-name">Hey, {{ data.name }}</h2>
+                <h2 id="reaction">Looks like you love it</h2>
+                <img class="emojies" src="../static/happy1.gif">
+            {% endif %}
+            {% if data.prediction == 0 %}
+                <h2 id="user-name">Hey, {{ data.name }}</h2>
+                <h2 id="reaction">Looks like you like it</h2>
+                <img id="emojies-like" src="../static/like_emoji.gif">
+            {% endif %}
+            {% if data.prediction == -1 %}
+                <h2 id="user-name">Hey, {{ data.name }}</h2>
+                <h2 id="reaction-hate">Its sad, <br> We will try to improve</h2>
+                <img class="emojies-hate" src="https://media.giphy.com/media/f1c74qkvN1Glq/source.gif">
+            {% endif %}
+        {% endif %}
+        <p class="declaration">develped and owned by JMK</p>
+        <a  class="home-icon" href="home"><img id="home-icon" src="../static/homepage_icon.png"> </a>
+
+    </div>
+
+</body>
+</html>
