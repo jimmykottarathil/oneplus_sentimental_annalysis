@@ -8,7 +8,7 @@ joblib==0.14.1
 kiwisolver==1.2.0
 MarkupSafe==2.0.0a1
 matplotlib==3.2.1
-nltk==3.5b1
+nltk==3.4.5
 numpy==1.18.2
 pandas==1.0.3
 pyparsing==3.0.0a1
