@@ -1,0 +1,8 @@
+source $BIN_DIR/utils
+
+echo "-----> Starting nltk data installation"
+python -m nltk.downloader averaged_perceptron_tagger
+cd ${NLTK_DATA}
+find . -name "*.zip" -type f -delete
+
+echo "-----> Finished nltk data installation"
